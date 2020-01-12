@@ -4,6 +4,7 @@ import Halo:Announcer:Log
 Actor Player
 int Kills = 0
 
+
 ; Events
 ;---------------------------------------------
 
@@ -68,23 +69,23 @@ EndState
 
 Function Annouce(int killed)
 	If (killed == DoubleKill)
-		VoiceEntry_HaloAnnouncer_MultiKill_DoubleKill.Play(Player)
+		HaloAnnouncer_DoubleKill.Play(Player)
 	ElseIf (killed == TripleKill)
-		VoiceEntry_HaloAnnouncer_MultiKill_TripleKill.Play(Player)
+		HaloAnnouncer_TripleKill.Play(Player)
 	ElseIf (killed == Overkill)
-		VoiceEntry_HaloAnnouncer_MultiKill_Overkill.Play(Player)
+		HaloAnnouncer_Overkill.Play(Player)
 	ElseIf (killed == Killtacular)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killtacular.Play(Player)
+		HaloAnnouncer_Killtacular.Play(Player)
 	ElseIf (killed == Killtrocity)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killtrocity.Play(Player)
+		HaloAnnouncer_Killtrocity.Play(Player)
 	ElseIf (killed == Killamanjaro)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killimanjaro.Play(Player)
+		HaloAnnouncer_Killimanjaro.Play(Player)
 	ElseIf (killed == Killtastrophe)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killtastrophe.Play(Player)
+		HaloAnnouncer_Killtastrophe.Play(Player)
 	ElseIf (killed == Killpocalypse)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killpocalypse.Play(Player)
+		HaloAnnouncer_Killpocalypse.Play(Player)
 	ElseIf (killed >= Killionaire)
-		VoiceEntry_HaloAnnouncer_MultiKill_Killionaire.Play(Player)
+		HaloAnnouncer_Killionaire.Play(Player)
 	Else
 		WriteUnexpectedValue(self, "Annouce", "killed", "The kill count of "+killed+" was unhandled.")
 	EndIf
@@ -125,13 +126,13 @@ Group Kills
 EndGroup
 
 Group Sounds
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_DoubleKill Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_TripleKill Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Overkill Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killtacular Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killtrocity Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killimanjaro Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killtastrophe Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killpocalypse Auto Const Mandatory
-	Sound Property VoiceEntry_HaloAnnouncer_MultiKill_Killionaire Auto Const Mandatory
+	Sound Property HaloAnnouncer_DoubleKill Auto Const Mandatory
+	Sound Property HaloAnnouncer_TripleKill Auto Const Mandatory
+	Sound Property HaloAnnouncer_Overkill Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killtacular Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killtrocity Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killimanjaro Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killtastrophe Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killpocalypse Auto Const Mandatory
+	Sound Property HaloAnnouncer_Killionaire Auto Const Mandatory
 EndGroup
