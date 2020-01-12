@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<PapyrusProject xmlns="PapyrusProject.xsd"
+	Flags="Institute_Papyrus_Flags.flg"
+	Output="..\..\"
+	Asm="Discard"
+	Optimize="false"
+	Release="false"
+	Final="false">
+	<Imports>
+		<Import>.</Import>
+		<Import>..\Base</Import>
+	</Imports>
+	<Folders>
+		<Folder>.</Folder>
+	</Folders>
+</PapyrusProject>
